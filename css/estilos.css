@@ -1,0 +1,96 @@
+.padre
+{
+    background-color: khaki;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr auto auto 1fr;
+    grid-template-areas:
+    "header header header header" 
+    "nav     nav    nav    nav"
+    "cont1  cont2  cont3  ads1"
+    "cont1  cont2  cont3  ads2"
+    "foot   foot   foot   foot";
+}
+
+.padre .header
+{
+    background-color: aquamarine;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padre .nav
+{
+    background-color: azure;
+    grid-area: nav;
+    padding: 5px;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+}
+
+.padre .nav .boton
+{
+    background-color: yellow;
+    margin: 5px;
+}
+
+
+
+
+.padre .cont1
+{
+    background-color: gainsboro;
+    grid-area: cont1;
+}
+
+.padre .cont2
+{
+    background-color: gainsboro;
+    grid-area: cont2;
+}
+
+.padre .cont3
+{
+    background-color: gainsboro;
+    grid-area: cont3;
+}
+
+.padre .ads1
+{
+    background-color: darkorange;
+    grid-area: ads1;
+}
+
+.padre .ads2
+{
+    background-color: darkorange;
+    grid-area: ads2;
+}
+
+.padre .foot
+{
+    background-color: aquamarine;
+    grid-area: foot;
+}
+
+@media screen and (max-width:768px) {
+    .padre
+    {
+        background-color: rgb(199, 246, 139);
+        font-family: 'Courier New', Courier, monospace;
+        grid-template-areas:
+        "header header header header" 
+        "nav     nav    nav    nav"
+        "cont1  cont1  cont1  cont1"
+        "cont2  cont2  cont3  cont3"
+        "ads1    ads2   ads2   ads2"
+        "foot   foot   foot   foot";
+
+    }
+}
